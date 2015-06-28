@@ -7,6 +7,7 @@ def get(query=""):
     r = requests.get(URL)
     r.encoding = 'utf-8'
     j = json.loads(r.text)
+    d['query'] = query
     d['modify'] = j['lastmodify']
     data = j['data']
     new_data = []

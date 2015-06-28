@@ -29,6 +29,7 @@
             </div>
             <ul class="list">
                 <li>請用全名搜尋</li>
+                <li>於臺北市醫院就醫之傷者家屬,若有相關問題,於晚上八點前可撥打社會局社工科電話 02-27206528</li>
                 <li><a href="http://er.mohw.g0v.tw/#/dashboard/file/default.json">北北基桃急診即時資訊</a></li>
                 <li>回報問題? 請私訊<a href="https://www.facebook.com/kevchentw">Facebook</a></li>
             </ul>
@@ -36,7 +37,7 @@
         <form class="ui form" method="get" action="">
             <div class="field">
                 <label>姓名搜尋 Search by Name</label>
-                <input name="q" type="text">
+                <input name="q" value="{{ query }}" type="text">
             </div>
             <input class="ui blue submit button" type="submit" value="搜尋">
             <a href="{% url 'home' %}" class="ui green button">全部名單</a>
