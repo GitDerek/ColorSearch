@@ -24,7 +24,6 @@
             <div class="sub header">資料最後更新 Last Update: {{ modify }}</div>
         </h1>
         <div class="ui info message">
-            <i class="close icon"></i>
             <div class="header">
                 使用說明
             </div>
@@ -40,7 +39,8 @@
                 <input name="q" type="text">
             </div>
             <input class="ui blue submit button" type="submit" value="搜尋">
-            <a href="/" class="ui green button">全部名單</a>
+            <a href="{% url 'home' %}" class="ui green button">全部名單</a>
+            <a href="{% url 'info' %}" class="ui yellow button">醫院與社福中心聯絡窗口</a>
         </form>
 
         <table class="ui striped table">
